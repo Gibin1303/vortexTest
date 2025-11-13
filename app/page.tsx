@@ -21,11 +21,7 @@ const Page = () => {
     fetchData();
   }, []);
 
-    const filteredPosts = posts.filter(
-    (post) =>
-      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.body.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  
 
   const getDetails = (id) => {
     router.push(`/posts/${id}`);

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 const Page = () => {
   const [data, setData] = useState();
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
 
   useEffect(() => {
     const getData = async () => {
